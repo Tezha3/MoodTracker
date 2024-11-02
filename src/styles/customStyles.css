@@ -1,0 +1,136 @@
+/* customStyles.css */
+
+/* General styles */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Softer background for a calming effect */
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+/* Navbar Custom Styling */
+.custom-navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(70, 130, 180, 1) 0%,
+    rgba(100, 149, 237, 1) 100%
+  ); /* Calming blue gradient */
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand-custom {
+  color: #fff !important;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px; /* Slightly rounded for a softer look */
+  background-color: rgba(255, 255, 255, 0.1); /* Highlighted brand area */
+}
+
+/* Dropdown Custom Styling */
+.nav-dropdown-custom {
+  font-size: 1.2rem;
+  margin-left: 15px;
+  color: #ffffff !important;
+  font-weight: bold;
+  /* background-color: #1e3d59;
+  border-radius: 5px; */
+}
+
+/* Dropdown Items */
+.nav-dropdown-custom .dropdown-menu {
+  background-color: #1e3d59;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-custom .dropdown-item {
+  color: #ffffff !important;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for Dropdown Items */
+.nav-dropdown-custom .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  border-radius: 5px;
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .navbar-brand-custom {
+    font-size: 1.5rem;
+  }
+
+  .nav-dropdown-custom {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+}
+
+/* Additional Styles for Dropdown */
+.navbar-nav .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+/* Features Section */
+.landing-cards .card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 0px;
+}
+
+.landing-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.landing-cards .card-title {
+  color: #4682b4; /* Steel blue for titles */
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.landing-cards .card-text {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand-custom {
+    font-size: 1.5rem;
+  }
+
+  .nav-link-custom {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+  .landing-cards .card {
+    margin-bottom: 15px;
+  }
+}

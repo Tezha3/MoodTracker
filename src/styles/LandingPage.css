@@ -1,0 +1,40 @@
+.landing-page {
+  background-image: url("/public/slide1.jpg"); /* Path to the image in the public directory */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Cover full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center content horizontally */
+}
+
+.features-section {
+  width: 100%; /* Take full width */
+}
+
+.features-bg {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  padding: 20px; /* Optional: Add padding to separate content from background */
+}
+
+.landing-cards .card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 0px;
+}
+
+.landing-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.landing-cards .card-title {
+  color: #4682b4; /* Steel blue for titles */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.landing-cards .card-text {
+  font-size: 0.9rem;
+  color: #555;
+}

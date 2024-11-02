@@ -1,0 +1,77 @@
+/* src/components/Cart.css */
+
+.cart-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px; /* Increased width from 400px to 500px */
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000; /* Ensure it appears above other elements */
+  overflow-y: auto; /* Allow scrolling if content exceeds height */
+  transition: transform 0.3s ease; /* Smooth slide-in effect */
+}
+
+.close-btn {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.close-btn:hover {
+  background-color: #ff3b3b; /* Darker red on hover */
+  color: white;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; /* Add vertical spacing */
+  border-bottom: 1px solid #eee; /* Add separator line between items */
+  font-size: 18px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center; /* Center buttons vertically */
+}
+
+.quantity-controls button {
+  background-color: #79a1cc; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 5px; /* Add spacing between buttons */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.quantity-controls button:hover {
+  background-color: #5286bd; /* Darker blue on hover */
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: right; /* Align total price to the right */
+  font-weight: bold;
+  text-align: center;
+}

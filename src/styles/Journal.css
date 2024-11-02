@@ -1,0 +1,32 @@
+/* src/styles/Journal.css */
+
+.journal-container {
+  margin-top: 50px;
+}
+
+.journal-entry {
+  margin-bottom: 20px;
+}
+
+.start-writing-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center vertically */
+}
+
+.journal-list {
+  margin-top: 30px;
+}
+
+.journal-entry h5 {
+  margin-bottom: 10px;
+}
+
+.journal-entry p {
+  margin-bottom: 5px;
+}
+
+.journal-entry small {
+  color: gray;
+}
